@@ -123,7 +123,6 @@ export const cvData = {
         'Sistema en Python para provision automatica de accesos cloud e integracion con servicios AWS.',
       stack: 'Python, AWS, automatizacion',
       impact: 'Reduccion significativa de tiempos de entrega y eliminacion de tareas manuales repetitivas.',
-      href: 'https://github.com/juzufer-svg',
     },
   ],
   availability: {
@@ -133,8 +132,8 @@ export const cvData = {
     focus: 'Proyectos con foco en performance, automatizacion, AWS y datos',
   },
   cta: {
-    title: 'Quieres optimizar tu plataforma o automatizar procesos criticos?',
-    message: 'Estoy disponible para colaborar en proyectos de alto impacto con Python, AWS y arquitectura backend.',
+    title: 'Si buscas una persona apasionada, con ganas de seguir aprendiendo y creciendo profesionalmente, estas viendo la hoja de vida indicada.',
+    message: 'Me enfoco en desarrollar software y automatizar procesos con compromiso, proactividad y mejora continua.',
   },
   links: [
     {

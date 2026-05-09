@@ -101,9 +101,11 @@ function Home() {
                     <p className={styles.projectMeta}>
                       <strong>Impacto:</strong> {project.impact}
                     </p>
-                    <a href={project.href} target="_blank" rel="noopener noreferrer">
-                      Ver proyecto
-                    </a>
+                    {project.href ? (
+                      <a href={project.href} target="_blank" rel="noopener noreferrer">
+                        Ver proyecto
+                      </a>
+                    ) : null}
                   </article>
                 ))}
               </div>
