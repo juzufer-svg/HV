@@ -112,6 +112,26 @@
   transform: translateX(2px);
 }
 
+:global(.heroActions) {
+  margin-top: 18px;
+}
+
+:global(.heroButton) {
+  border: 1px solid var(--brand);
+  background: linear-gradient(135deg, var(--brand) 0%, var(--accent-1) 100%);
+  color: #fff;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+:global(.heroButton:hover) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(15, 92, 192, 0.35);
+}
+
 .contentGrid {
   margin-top: 24px;
   display: grid;
@@ -425,6 +445,114 @@
   transform: translate(2px, -2px);
 }
 
+.projectGrid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.projectCard {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px;
+  transition: all 0.25s ease;
+}
+
+.projectCard:hover {
+  border-color: var(--brand);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 22px rgba(15, 92, 192, 0.12);
+}
+
+.projectCard h3 {
+  margin: 0 0 8px;
+  color: var(--ink-1);
+}
+
+.projectDesc {
+  margin: 0 0 10px;
+  color: var(--ink-2);
+}
+
+.projectMeta {
+  margin: 0 0 8px;
+  color: var(--ink-2);
+  font-size: 0.92rem;
+}
+
+.projectCard a {
+  display: inline-flex;
+  margin-top: 6px;
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.availabilityGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.availabilityItem {
+  margin: 0;
+  padding: 12px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--brand-light) 0%, #fff 100%);
+}
+
+.ctaSection {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  background: linear-gradient(120deg, #0f5cc0 0%, #00a8ff 100%);
+  color: #fff;
+  box-shadow: 0 16px 32px rgba(15, 92, 192, 0.22);
+}
+
+.ctaSection h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+}
+
+.ctaSection p {
+  margin: 0;
+  opacity: 0.96;
+}
+
+.ctaActions {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btnPrimary,
+.btnGhost {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.btnPrimary {
+  background: #fff;
+  color: #0f5cc0;
+}
+
+.btnGhost {
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  color: #fff;
+}
+
+.btnPrimary:hover,
+.btnGhost:hover {
+  transform: translateY(-2px);
+}
+
 @media (min-width: 900px) {
   .main {
     padding: 48px 24px 72px;
@@ -446,5 +574,14 @@
 
   :global(.skillGrid) {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  .projectGrid,
+  .availabilityGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ctaSection {
+    grid-column: span 2;
   }
 }

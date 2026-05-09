@@ -13,6 +13,17 @@ export default function Hero({ personal, profile }) {
           <a href={`tel:+57${personal.phone}`}>+57 {personal.phone}</a>
         </li>
       </ul>
+      <div className="heroActions">
+        <button
+          type="button"
+          className="heroButton"
+          onClick={() => {
+            window.print()
+          }}
+        >
+          Descargar CV en PDF
+        </button>
+      </div>
     </section>
   )
 }

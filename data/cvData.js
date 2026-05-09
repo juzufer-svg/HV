@@ -1,4 +1,10 @@
 export const cvData = {
+  seo: {
+    title: 'Julian David Zuniga Fernandez | Backend Developer y Cloud Engineer',
+    description:
+      'Portafolio y hoja de vida de Julian David Zuniga Fernandez. Python, Flask, FastAPI, AWS, SQL Server, automatizacion y performance en entornos productivos.',
+    siteUrl: 'https://hv.vercel.app',
+  },
   personal: {
     fullName: 'Julián David Zúñiga Fernández',
     title: 'Full Stack Developer | +10 años de experiencia en TI',
@@ -95,6 +101,41 @@ export const cvData = {
     'English Dot Works Beginner - SENA',
     'English Dot Works Level 1 - SENA',
   ],
+  projects: [
+    {
+      name: 'CRM Empresarial',
+      description:
+        'CRM web desplegado en AWS para gestion comercial y operativa con modulos de clientes, procesos y reportes.',
+      stack: 'Flask, SQL Server, AWS',
+      impact: 'Centralizacion de gestion empresarial y mejora en trazabilidad de procesos.',
+      href: 'https://omegacolcrm.com',
+    },
+    {
+      name: 'App Financiera Personal',
+      description: 'Aplicacion web para control de gastos, categorias, metas y visualizacion de habitos financieros.',
+      stack: 'Next.js, JavaScript, Vercel',
+      impact: 'Seguimiento mas claro de finanzas personales y toma de decisiones con datos.',
+      href: 'https://finanzyapp.vercel.app',
+    },
+    {
+      name: 'Automatizacion de Credenciales - SIESA',
+      description:
+        'Sistema en Python para provision automatica de accesos cloud e integracion con servicios AWS.',
+      stack: 'Python, AWS, automatizacion',
+      impact: 'Reduccion significativa de tiempos de entrega y eliminacion de tareas manuales repetitivas.',
+      href: 'https://github.com/juzufer-svg',
+    },
+  ],
+  availability: {
+    status: 'Disponible para oportunidades como Backend Developer o Cloud Engineer',
+    location: 'Base en Cali, Colombia',
+    modality: 'Remoto, hibrido o presencial',
+    focus: 'Proyectos con foco en performance, automatizacion, AWS y datos',
+  },
+  cta: {
+    title: 'Quieres optimizar tu plataforma o automatizar procesos criticos?',
+    message: 'Estoy disponible para colaborar en proyectos de alto impacto con Python, AWS y arquitectura backend.',
+  },
   links: [
     {
       label: 'CRM Empresarial – omegacolcrm.com',
