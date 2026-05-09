@@ -1,11 +1,236 @@
 .main {
-  padding: 20px 20px 60px;
-  max-width: 680px;
+  --bg-top: #e5f4ff;
+  --bg-bottom: #f8fbff;
+  --ink-1: #132033;
+  --ink-2: #33455e;
+  --line: #d5e0ee;
+  --panel: #ffffff;
+  --brand: #0f5cc0;
+
+  min-height: 100vh;
+  padding: 28px 16px 54px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(15, 92, 192, 0.16), transparent 34%),
+    radial-gradient(circle at 100% 12%, rgba(56, 189, 248, 0.2), transparent 26%),
+    linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+}
+
+.shell {
+  width: min(1080px, 100%);
   margin: 0 auto;
 }
 
-.hr {
-  border: none;
-  border-bottom: 1px solid #efefef;
-  margin: 3em auto;
+:global(.heroCard) {
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: linear-gradient(180deg, #fff, #f8fbff);
+  box-shadow: 0 10px 28px rgba(25, 58, 104, 0.08);
+}
+
+:global(.heroCity) {
+  margin: 0;
+  color: var(--ink-2);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+:global(.heroCard h1) {
+  margin: 8px 0;
+  font-size: clamp(1.85rem, 4vw, 3.15rem);
+  line-height: 1;
+  color: var(--ink-1);
+}
+
+:global(.heroTitle) {
+  margin: 0;
+  color: #1d3557;
+  font-weight: 600;
+}
+
+:global(.heroProfile) {
+  margin: 8px 0 0;
+  color: var(--ink-2);
+}
+
+:global(.heroContact) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+:global(.heroCard a) {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+:global(.heroCard a:hover) {
+  text-decoration: underline;
+}
+
+.contentGrid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+:global(.cvSection) {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+:global(.cvSectionHeader h2) {
+  margin: 0;
+  color: var(--ink-1);
+  font-size: clamp(1.2rem, 2.1vw, 1.5rem);
+}
+
+:global(.cvSectionHeader p) {
+  margin: 6px 0 16px;
+  color: var(--ink-2);
+  font-size: 0.95rem;
+}
+
+:global(.cvSection > p) {
+  margin: 0;
+  color: var(--ink-2);
+  max-width: 75ch;
+}
+
+:global(.cvSection ul),
+:global(.cvSection ol) {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--ink-2);
+}
+
+:global(.cvSection li + li) {
+  margin-top: 10px;
+}
+
+:global(.skillGrid) {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+:global(.skillCard) {
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #f8fbff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+:global(.skillCard span) {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0d63d3;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+:global(.timelineList) {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 12px;
+}
+
+:global(.timelineItem) {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fbfdff;
+}
+
+:global(.timelinePeriod) {
+  margin: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #4f6685;
+}
+
+:global(.timelineItem h3) {
+  margin: 8px 0 4px;
+  color: var(--ink-1);
+}
+
+:global(.timelineMeta) {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+:global(.timelinePoints) {
+  margin-top: 10px;
+}
+
+.eduList {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.eduItem {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fbfdff;
+}
+
+.eduItem h3 {
+  margin: 0 0 4px;
+  color: var(--ink-1);
+}
+
+.eduItem p {
+  margin: 0;
+  color: var(--ink-2);
+}
+
+.muted {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  color: #5d7392;
+}
+
+.simpleList {
+  list-style: disc;
+}
+
+@media (min-width: 900px) {
+  .main {
+    padding: 48px 24px 72px;
+  }
+
+  :global(.heroCard) {
+    padding: 36px;
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  :global(.cvSection#experiencia),
+  :global(.cvSection#educacion) {
+    grid-column: span 2;
+  }
 }
