@@ -58,20 +58,16 @@ function Home() {
             </ul>
           </Section>
 
-          <Section id="enlaces" title="Enlaces y proyectos" subtitle="Recursos destacados">
-            <ul className={styles.simpleList}>
+
+
+          <Section id="enlaces" title="Enlaces y proyectos" subtitle="Recursos y trabajos destacados">
+            <ul className={styles.projectList}>
               {links.map((link) => (
                 <li key={link.label}>
-                  <a href={link.href}>{link.label}</a>
+                  <a href={link.href} target="_blank" rel="noopener noreferrer">
+                    {link.label}
+                  </a>
                 </li>
-              ))}
-            </ul>
-          </Section>
-
-          <Section id="intereses" title="Intereses" subtitle="Lo que me motiva profesionalmente">
-            <ul className={styles.simpleList}>
-              {hobbies.map((hobby) => (
-                <li key={hobby}>{hobby}</li>
               ))}
             </ul>
           </Section>

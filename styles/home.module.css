@@ -215,6 +215,30 @@
   list-style: disc;
 }
 
+.projectList {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.projectList li {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #f8fbff;
+}
+
+.projectList a {
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.projectList a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 900px) {
   .main {
     padding: 48px 24px 72px;
