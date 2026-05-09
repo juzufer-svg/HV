@@ -184,7 +184,7 @@
   border-radius: 14px;
   background: linear-gradient(135deg, #f8fbff 0%, #f0f7ff 100%);
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 12px;
   transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
@@ -220,24 +220,6 @@
   font-weight: 700;
   flex: 1;
   font-size: 0.95rem;
-}
-
-:global(.skillCard span) {
-  font-size: 0.7rem;
-  font-weight: 800;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 6px 12px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--brand) 0%, var(--accent-1) 100%);
-  white-space: nowrap;
-  transition: all 0.3s ease;
-}
-
-:global(.skillCard:hover span) {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(15, 92, 192, 0.3);
 }
 
 :global(.timelineList) {
