@@ -13,7 +13,9 @@ export const cvData = {
     email: 'julianz96@hotmail.com',
   },
   profile:
-    `Backend Developer y Cloud Engineer especializado en Python (Flask, FastAPI) y AWS (EC2, RDS, S3, Lambda). Profesional con más de 10 años de experiencia en el sector de tecnologías de la información, con trayectoria en gestión de procesos, soporte operativo y optimización de soluciones orientadas al negocio. Actualmente enfocada en el desarrollo web y construcción de marca digital, fortaleciendo habilidades en tecnologías modernas como JavaScript, React y Next.js para crear aplicaciones y plataformas funcionales, visualmente atractivas y alineadas con las necesidades del negocio.
+    `Developer full Stack y Cloud Engineer especializada en Python (Flask y FastAPI) y servicios AWS (EC2, RDS, S3 y Lambda). Profesional con más de 10 años de experiencia en el sector de tecnologías de la información, con trayectoria en gestión de procesos, soporte operativo y optimización de soluciones orientadas al negocio.
+
+Actualmente enfocada en el desarrollo web y la construcción de marca digital, fortaleciendo habilidades en tecnologías modernas como JavaScript, React y Next.js para crear aplicaciones y plataformas funcionales, visualmente atractivas y alineadas con las necesidades del negocio.
 
 Me caracterizo por el aprendizaje continuo, la adaptación a nuevas tecnologías y la capacidad de combinar pensamiento analítico, creatividad y orientación a resultados para aportar valor en proyectos digitales e innovadores.`,
   skills: [

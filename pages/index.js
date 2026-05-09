@@ -41,11 +41,11 @@ function Home() {
           <Hero personal={personal} profile={profile} />
 
           <div className={styles.contentGrid}>
-            <Section id="habilidades" title="Habilidades" subtitle="Competencias tecnicas y funcionales">
+            <Section id="habilidades" title="Habilidades" subtitle="Competencias técnicas y funcionales">
               <SkillCloud skills={skills} />
             </Section>
 
-            <Section id="experiencia" title="Experiencia laboral" subtitle="10 anos de experiencia profesional">
+            <Section id="experiencia" title="Experiencia laboral" subtitle="10 años de experiencia profesional">
               <Timeline items={experience} />
             </Section>
 
