@@ -563,13 +563,8 @@
   }
 
   .contentGrid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
-  }
-
-  :global(.cvSection#experiencia),
-  :global(.cvSection#educacion) {
-    grid-column: span 2;
   }
 
   :global(.skillGrid) {
@@ -579,9 +574,5 @@
   .projectGrid,
   .availabilityGrid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .ctaSection {
-    grid-column: span 2;
   }
 }
