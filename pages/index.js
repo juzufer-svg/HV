@@ -12,7 +12,6 @@ function Home() {
     personal,
     profile,
     skills,
-    summary,
     experience,
     education,
     certifications,
@@ -42,14 +41,6 @@ function Home() {
           <Hero personal={personal} profile={profile} />
 
           <div className={styles.contentGrid}>
-            <Section
-              id="resumen"
-              title="Resumen profesional"
-              subtitle="Trayectoria en soporte, infraestructura, performance y automatizacion"
-            >
-              <p>{summary}</p>
-            </Section>
-
             <Section id="habilidades" title="Habilidades" subtitle="Competencias tecnicas y funcionales">
               <SkillCloud skills={skills} />
             </Section>
